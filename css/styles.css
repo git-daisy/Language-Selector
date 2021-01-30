@@ -1,0 +1,30 @@
+.box1 {
+  text-align: center;
+    position:static;
+    border: 5px solid rgb(68, 91, 97);
+    padding: 40px;
+    margin: 30px;
+    width: 1270px;
+    height: 160px;
+}
+
+body {
+  text-align: center;
+}
+
+.span1 {
+  color: #800000;
+}
+
+.box2 {
+  text-align: center;
+    position:static;
+    border: 4px double rgb(88, 68, 97);
+    padding: 40px;
+    margin: 30px;
+    width: 1270px;
+    height: 160px;
+}
+
+
+
