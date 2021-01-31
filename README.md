@@ -10,8 +10,8 @@ A project for my JavaScript review
 * Visual Studio Code 
 * Github
 * Terminal 
-*JavaScript 
-*JQuery 
+* JavaScript 
+* JQuery 
 
 
 ## Description :
