@@ -15,8 +15,8 @@
       <hr>
     </div>  
 
-    <div>
-      <h2>This handy webpabe will help you decide which code language to learn!</h2>
+    <div> 
+      <h2>This handy webpage will help you decide which code language to learn!</h2>
       <p><em>Here, we'll sift through four popular languages and decide which
         would be the best to learn first. Fill out the survey below to find your best fit!<em></p>
     </div>
@@ -26,40 +26,74 @@
       <div class="box2">
         <div id="prompt1"> 
           <h3><span class="span1">Coding is hard.</span> Do you want to really challenge yourself? Or would you prefer something easier to follow?</h3>
-        </div> 
+          
+          <div id="easier">
+            <button type="button">Easier!</button>
+          </div>
 
-        <div id="easier">
-          <button type="button">Easier!</button>
+          <div id="challenge">
+            <button type="button">Challenge Me!</button>
+          </div> 
         </div>
 
-        <div id="challenge">
-          <button type="button">Challenge Me!</button>
-        </div>  
-
-        <div id="prompt2">
+        <div id="prompt2"> <!--Prompt offered when easier selected-->
           <h3>Do you want to learn a general purpose language, or do some serious development?</h3>
+            
+          <div id="general">
+              <button type="button">General Purpose</button>
+            </div>
+
+            <div id="serious">
+              <button type="button">Serious Development</button>
+            </div>
         </div>
 
-        <div id="general">
-          <button type="button">General Purpose</button>
-        </div>
+        <div id="prompt3"><!--Prompt offered when challenge accepted-->
+          <h3>Would you prefer something more portable (compatible), or something mainly focusing on windows?</h3>
 
-        <div id="serious">
-          <button type="button">Serious Development</button>
-        </div>
+          <div id="portable">
+            <button type="button">Portable!</button>  
+          </div>
 
+          <div id="windows">
+            <button type="button">WINDOWS</button>
+          </div>
         </div>
-      
-      
-      
-      
-      
-        </div>
+      </div>
     </div>
 
+    <div class="box2">
+      <div id="python" style="display:none">
+        <h3><em>Python!</em> Based on your answers, I'd bet you'll love learning the simple, user frienldy language that is python!</h3>
+      </div>
 
-  
+      <div id="ruby" style="display:none">
+        <h3><em>Ruby</em> is for you! Check out <a href="www.epicodus.com">Epicodus</a> if you want an incredibly welcoming learning enviornment!</h3>
+      </div>
 
-    
+      <div id="java" style="display:none">
+        <h3>My guess is that your analytical mind would thrive in a <em>Java</em> course!</h3>
+      </div>
+
+      <div id="c" style="display:none">
+        <h3>Anyone who likes working with Windows is sure to make it big in a <em>C#</em> world. <a href="www.epicodus.com">Epicodus</a> has an awesome course available for C#!</h3>
+      </div>
+    </div> 
+  </div>
+<!--
+  <div class="container">
+    <div id="lame">
+      <p><em>fortunatley for you, no lizards are willing to guide you on your quest today. Try again later.</em></p>
+    </div>
+
+    <div id="dragon">
+      <p><em>Great luck has fallen upon you loyal one, the great dragon is here to assist you on youre quest.</em></p>
+    </div>
+
+    <div id="liazrd">
+      <p><em>Wonderful! Luckily, Reginald the leatherly is here to assist you on your quest!</em></p>
+    </div>
+  </div>
+  --> 
   </body>
 </html>
