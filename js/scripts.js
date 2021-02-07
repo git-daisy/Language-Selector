@@ -25,34 +25,32 @@ $(document).ready(function(){
   $("#general").click(function() {
     $("#python").toggle();
     $("#serious").hide();
+    $("#rate").toggle();
+    $("#general").hide();
+    $("#prompt2").hide();
   });
 
   $("#serious").click(function() {
     $("#ruby").toggle();
     $("#general").hide();
+    $("#rate").toggle();
+    $("#prompt2").hide();
     });
 
 
   $("#portable").click(function() {
     $("#java").toggle();
     $("#windows").hide();
+    $("#rate").toggle();
+    $("#prompt3").hide();
   });
 
 
   $("#windows").click(function() {
     $("#c").toggle();
     $("#portable").hide();
+    $("#rate").toggle();
+    $("#prompt3").hide();
   });
 
-  // const love = parseInt(prompt("On a scale of 1-10, how much do you love lizards?"));
-  //if (love < 8) {
-   // $("#lame").show();
-  //  }
-  //  else if (love > 10) {
-  //    $("#dragon").show(); 
-  //  }
-  //  else (love === 10) {
-  //    $("#lizard").show();
-  // }
-  //});
 });
