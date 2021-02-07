@@ -1,4 +1,16 @@
-$(document).ready(function(){
+$(document).ready(function() {
+  $("form#rate").submit(function(event) {
+    let questionOne = $("input#questionOne").val();
+
+    if (questionOne === "10" ) {
+      alert("Hey thanks for stroking my ego, bud!");
+    } else if (questionOne > 4 ) {
+      $("#thanks").show();
+    } else {
+      $("#boo").show();
+    }
+    event.preventDefault();
+  });
 
   $("#prompt2").hide();
   $("#prompt3").hide();
@@ -6,9 +18,7 @@ $(document).ready(function(){
   $("#ruby").hide();
   $("#java").hide();
   $("#c").hide();
-  //$("#lame").hide();
-  //$("#dragon").hide();
-  //$("#lizard").hide();
+
   
   $("#easier").click(function() { 
     $("#prompt1").hide();
