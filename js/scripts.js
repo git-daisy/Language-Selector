@@ -8,11 +8,11 @@ $(document).ready(function() {
   $("#c").hide();
   
 
-  let questionOne = $("select#questionOne").val();
-
   $("form#promptOne").submit(function(event) {
     event.preventDefault();
     
+    let questionOne = $("select#questionOne").val();
+
     if (questionOne == 1) {
       $("#promptTwo").show();
       $("#promptOne").hide();
@@ -49,13 +49,23 @@ $(document).ready(function() {
     }
   });
 
-  // $("form#promptFour").submit(function(event) {
-  //   event.preventDefault();
+  $("form#promptFour").submit(function(event) {
+    event.preventDefault();
 
-  //   if (questionTwo = 1)
-  // });
+    let questionFour = $("select#questionFour").val();
 
+    if ( questionFour = 1) {
+      $("#ruby").show(); 
+    } else if ( questionFour = 2) {
+      $("#java").show();
+    } else if ( questionFour = 3) {
+      $("#c").show(); 
+    } else if ( questionFour = 4) { 
+      $("#python").show();
+    } 
+  });
 
+ 
 
 
 
