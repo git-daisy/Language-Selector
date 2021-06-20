@@ -12,23 +12,18 @@ body {
   text-align: center;
 }
 
-.span1 {
-  color: #800000;
-}
-
 .box2 {
-  display: none; 
   text-align: center;
     position:static;
     border: 5px solid rgb(89, 57, 104);
     padding: 40px;
     margin: 30px;
     width: 1270px;
-    height: 160px;
+    height: 200px;
 }
 
 #rate {
-  display: none;
+  display:none;
 }
 
 #thanks {

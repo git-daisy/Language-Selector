@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     let questionTwo = $("select#questionTwo").val();
 
-    if (questionTwo == 1 || 2) {
+    if (questionTwo === 1 || 2) {
       $("#promptFour").show();
       $("#promptOne").hide();
       $("#promptTwo").hide();
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
     let questionThree = $("select#questionThree").val();
 
-    if ( questionThree == 1 || 2 ) {
+    if (questionThree === 1 || 2 ) {
       $("#promptFour").show();
       $("#promptOne").hide();
       $("#promptTwo").hide();
@@ -54,83 +54,32 @@ $(document).ready(function() {
 
     let questionFour = $("select#questionFour").val();
 
-    if ( questionFour = 1) {
+    if (questionFour == 1) {
       $("#ruby").show(); 
-    } else if ( questionFour = 2) {
+      $("form#rate").show();
+    } else if (questionFour == 2) {
       $("#java").show();
-    } else if ( questionFour = 3) {
+      $("form#rate").show();
+    } else if (questionFour == 3) {
       $("#c").show(); 
-    } else if ( questionFour = 4) { 
+      $("form#rate").show();
+    } else if (questionFour == 4) { 
       $("#python").show();
-    } 
+      $("form#rate").show();
+    }  
   });
 
- 
-
-
-
-
-
-
-
-
-
   $("form#rate").submit(function(event) {
-    let questionOne = $("input#questionOne").val();
+    event.preventDefault();
+  
+    let rateMe = $("input#rateMe").val();
 
-    if (questionOne === "10" ) {
+    if (rateMe === "10" ) {
       alert("Hey thanks for stroking my ego, bud!");
-    } else if (questionOne > 4 ) {
+    } else if (rateMe > 4 ) {
       $("#thanks").show();
     } else {
       $("#boo").show();
     }
-    event.preventDefault();
-  });
-
-  
-  
-//   $("#easier").click(function() { 
-//     $("#prompt1").hide();
-//     $("#prompt2").show();
-//     $("#prompt3").hide();
-//   }); 
-  
-//   $("#challenge").click(function() { 
-//     $("#prompt1").hide();
-//     $("#prompt2").hide();
-//     $("#prompt3").show();
-//   }); 
-  
-//   $("#general").click(function() {
-//     $("#python").toggle();
-//     $("#serious").hide();
-//     $("#rate").toggle();
-//     $("#general").hide();
-//     $("#prompt2").hide();
-//   });
-
-//   $("#serious").click(function() {
-//     $("#ruby").toggle();
-//     $("#general").hide();
-//     $("#rate").toggle();
-//     $("#prompt2").hide();
-//     });
-
-
-//   $("#portable").click(function() {
-//     $("#java").toggle();
-//     $("#windows").hide();
-//     $("#rate").toggle();
-//     $("#prompt3").hide();
-//   });
-
-
-//   $("#windows").click(function() {
-//     $("#c").toggle();
-//     $("#portable").hide();
-//     $("#rate").toggle();
-//     $("#prompt3").hide();
-//   });
-
+  }); 
 });

@@ -32,7 +32,7 @@
     </div>
 
     <div class="container">
-      <form id="promptTwo"> <!-- Offered when EASIER selected -->
+      <form id="promptTwo"> 
         <h2>Do you want to learn a general purpose language, or do some serious development?</h2>  
         <select class="form-control" name="questionTwo" id="questionTwo" form="promptTwo">
           <option value="1">General Purpose</option> <!--python-->
@@ -42,12 +42,12 @@
       </form>
     </div>
 
-    <div class="container"> <!--Offered when CHALLENGE ME selected -->
+    <div class="container"> 
       <form id="promptThree">
         <h2>Would you prefer something more portable (compatible), or something mainly focusing on windows?</h2>
         <select class="form-control" name="questionThree" id="questionThree">
-          <option value="1">Portable</option> <!--java-->
-          <option value="2">Windows</option> <!--C# -->
+          <option value="1">Portable</option> 
+          <option value="2">Windows</option> 
         </select>
         <input type="submit">
       </form>
@@ -60,7 +60,7 @@
           <option value="1"> Yes, I am a child.</option>
           <option value="2"> No, I am an adult.</option>
           <option value="3"> Why does it matter???</option>
-          <option value="4"> My entire being is solely fueled by memes -_- </option>
+          <option value="4"> My entire existence is solely fueled by memes -_- </option>
         </select>
         <input type="submit"> 
       </form>
@@ -86,22 +86,21 @@
         <h3>Anyone who likes working with Windows is sure to make it big in a <em>C#</em> world! <a href="www.epicodus.com">Epicodus</a> has an awesome course available for C#!</h3>
         <p>Please rate your experience below!</p>
       </div>
+      <div class="container">
+        <form id="rate">
+          <label for="rateMe"> Between 1-10, how helpful was this short questionaire?</label>
+          <input id="rateMe" type="text">
+          <button  type="submit">Rate!</button>
+          
+          <div id="thanks">
+            <h2>Thanks for the feedback, I'm so happy you took the time to check out my first webpage made with JavaScript!</h2>
+          </div>
+    
+          <div id="boo">
+            <h2>Well, next time you need assistance - don't expect my help.</h2>
+          </div>
+      </form>
+      </div>
     </div> 
-  </div>
-
-  <form id="rate">
-      <label for="questionOne"> Between 1-10, how helpful was this short questionaire?</label>
-      <input id="questionOne" type="text">
-      <button  type="submit">Rate!</button>
-      
-      <div id="thanks">
-        <h2>Thanks for the feedback, I'm so happy you took the time to check out my first webpage made with JavaScript!</h2>
-      </div>
-
-      <div id="boo">
-        <h2>Well, next time you need assistance - don't expect my help.</h2>
-      </div>
-  </form>
-
   </body>
 </html>
