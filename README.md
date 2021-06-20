@@ -14,8 +14,9 @@ A project for my JavaScript review
 * JQuery 
 
 
-## Description :
-This project site is to demonstrate my new skills with JavaScript and JQuery! Upon opening the page you'll find a language 'picker', which will guide a user through multiple questions to reach a final suggestion. I struggled a bit to get my branching to work properly, so decided to save part of my project for another night and comment out some lines I'd like to come back to. Overall I feel good about what I got accomplished with the time I had, and am ecited to finish it up!
+## Description : 
+
+ This is now a refactoring project which started out very sloppy and linear. It is simply a survey style webpage that asks you to answer questions to eventually be given a suggested code language to learn. I implemented functions to accomplish more with less effort, and ultimately allowed the program to make the decision based off of the users final input- instead of gathering data from each input. This was a great project to jump back into and wrap my brain around again, it pushed me to get better 'googling' and correctly search for resources. There are still a few things I would love to implement, though it looks and runs much more elequently than before, its not pretty and could use a bit of good styling. Overall I feel happy with what I have accomplished and learned during the refactoring proccess. Now I know some tips and tricks, as well as some things to avoid. (like reading my old readme so I know the epicodus links do not work...  smh) 
 
 ## Known Bugs:
  Links to epicodus do not actually work! 
