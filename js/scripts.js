@@ -1,28 +1,49 @@
 $(document).ready(function() {
+  $("#promptTwo").hide();
+  $("#promptThree").hide();
+  $("#python").hide();
+  $("#ruby").hide();
+  $("#java").hide();
+  $("#c").hide();
 
-  const questionOne = parseInt($("#questionOne").val());
-
-  $("form#rate").submit(function(event) {
-    let questionOne = $("input#questionOne").val();
-
-    if (questionOne === "10" ) {
-      alert("Hey thanks for stroking my ego, bud!");
-    } else if (questionOne > 4 ) {
-      $("#thanks").show();
-    } else {
-      $("#boo").show();
-    }
+  $("form#promptOne").submit(function(event) {
     event.preventDefault();
+    
+    let questionOne = $("select#questionOne").val();
+
+    if (questionOne == 1) {
+      $("#promptTwo").show();
+      $("#promptOne").hide();
+    } else if (questionOne == 2) {
+      $("#promptThree").show();
+      $("#promptOne").hide();
+    }
   });
 
- 
-//   $("#prompt2").hide();
-//   $("#prompt3").hide();
-//   $("#python").hide();
-//   $("#ruby").hide();
-//   $("#java").hide();
-//   $("#c").hide();
+  $("form#questionTwo").submit
 
+
+
+
+
+
+
+
+
+  // $("form#rate").submit(function(event) {
+  //   let questionOne = $("input#questionOne").val();
+
+  //   if (questionOne === "10" ) {
+  //     alert("Hey thanks for stroking my ego, bud!");
+  //   } else if (questionOne > 4 ) {
+  //     $("#thanks").show();
+  //   } else {
+  //     $("#boo").show();
+  //   }
+  //   event.preventDefault();
+  // });
+
+  
   
 //   $("#easier").click(function() { 
 //     $("#prompt1").hide();
@@ -67,4 +88,4 @@ $(document).ready(function() {
 //     $("#prompt3").hide();
 //   });
 
-// });
+});
