@@ -1,47 +1,82 @@
 $(document).ready(function() {
   $("#promptTwo").hide();
   $("#promptThree").hide();
+  $("#promptFour").hide(); 
   $("#python").hide();
   $("#ruby").hide();
   $("#java").hide();
   $("#c").hide();
+  
+
+  let questionOne = $("select#questionOne").val();
 
   $("form#promptOne").submit(function(event) {
     event.preventDefault();
     
-    let questionOne = $("select#questionOne").val();
-
     if (questionOne == 1) {
       $("#promptTwo").show();
       $("#promptOne").hide();
     } else if (questionOne == 2) {
       $("#promptThree").show();
       $("#promptOne").hide();
+      $("#promptTwo").hide();
+    }
+  }); 
+
+  $("form#promptTwo").submit(function(event) {
+    event.preventDefault();
+
+    let questionTwo = $("select#questionTwo").val();
+
+    if (questionTwo == 1 || 2) {
+      $("#promptFour").show();
+      $("#promptOne").hide();
+      $("#promptTwo").hide();
+      $("#promptThree").hide();
+    }
+  }); 
+
+  $("form#promptThree").submit(function(event) {
+    event.preventDefault();
+
+    let questionThree = $("select#questionThree").val();
+
+    if ( questionThree == 1 || 2 ) {
+      $("#promptFour").show();
+      $("#promptOne").hide();
+      $("#promptTwo").hide();
+      $("#promptThree").hide();
     }
   });
 
-  $("form#questionTwo").submit
-
-
-
-
-
-
-
-
-
-  // $("form#rate").submit(function(event) {
-  //   let questionOne = $("input#questionOne").val();
-
-  //   if (questionOne === "10" ) {
-  //     alert("Hey thanks for stroking my ego, bud!");
-  //   } else if (questionOne > 4 ) {
-  //     $("#thanks").show();
-  //   } else {
-  //     $("#boo").show();
-  //   }
+  // $("form#promptFour").submit(function(event) {
   //   event.preventDefault();
+
+  //   if (questionTwo = 1)
   // });
+
+
+
+
+
+
+
+
+
+
+
+  $("form#rate").submit(function(event) {
+    let questionOne = $("input#questionOne").val();
+
+    if (questionOne === "10" ) {
+      alert("Hey thanks for stroking my ego, bud!");
+    } else if (questionOne > 4 ) {
+      $("#thanks").show();
+    } else {
+      $("#boo").show();
+    }
+    event.preventDefault();
+  });
 
   
   

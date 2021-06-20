@@ -22,132 +22,84 @@
 
     <div class="container">
       <form id="promptOne">
-        <input type="submit">
         <h2>Would you like a challenge, or something easier to follow?</h2>
         <select class="form-control" name="questionOne" id="questionOne" form="promptOne">
           <option value="1">Easier</option>
           <option value="2">Challenge Me</option>
         </select>
+        <input type="submit">
       </form> 
     </div>
 
     <div class="container">
-      <form id="promptTwo">
-        <input type="submit">
+      <form id="promptTwo"> <!-- Offered when EASIER selected -->
         <h2>Do you want to learn a general purpose language, or do some serious development?</h2>  
-          <select class="form-control" name="questionTwo" id="questionTwo" form="promptTwo">
-            <option value="1">General Purpose</option>
-            <option value="2">Serios Development</option>
-          </select>
+        <select class="form-control" name="questionTwo" id="questionTwo" form="promptTwo">
+          <option value="1">General Purpose</option> <!--python-->
+          <option value="2">Serious Development</option> <!--Ruby-->
+        </select>
+        <input type="submit">
+      </form>
+    </div>
+
+    <div class="container"> <!--Offered when CHALLENGE ME selected -->
+      <form id="promptThree">
+        <h2>Would you prefer something more portable (compatible), or something mainly focusing on windows?</h2>
+        <select class="form-control" name="questionThree" id="questionThree">
+          <option value="1">Portable</option> <!--java-->
+          <option value="2">Windows</option> <!--C# -->
+        </select>
+        <input type="submit">
       </form>
     </div>
 
     <div class="container">
-      <form id="promptThree">
-        <h2>Would you prefer something more portable (compatible), or something mainly focusing on windows?</h2>
-        <select class="form-control" name="questionThree" id="questionThree">
-          <option value="1">Portable</option>
-          <option value="2">Windows</option>
+      <form id="promptFour">
+        <h2>Do you enjoy memes?</h2>
+        <select class="form-control" name="questionFour" id="questionFour">
+          <option value="1">Yes, I am a child.</option>
+          <option value="2">No, I am an adult.</option>
         </select>
+        <input type="submit"> 
       </form>
     </div>
-  </div> 
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <!--   <div class="container">
-      <div class="box2">
-        <form id="questionOne"> 
-          <h3><span class="span1">Coding is hard.</span> Do you want to really challenge yourself? Or would you prefer something easier to follow?</h3>
-          
-          <div id="easier">
-            <button type="button">Easier!</button>
-          </div>
-
-          <div id="challenge">
-            <button type="button">Challenge Me!</button>
-          </di> 
-        </div>
-
-        <div id="prompt2">  Prompt offered when easier selected
-          <h3>Do you want to learn a general purpose language, or do some serious development?</h3>  
-          <div id="general">
-              <button type="button">General Purpose</button>
-            </div>
-
-            <div id="serious">
-              <button type="button">Serious Development</button>
-            </div>
-        </div>
-
-        <div id="prompt3">  Prompt offered when challenge accepted
-          <h3>Would you prefer something more portable (compatible), or something mainly focusing on windows?</h3>
-
-          <div id="portable">
-            <button type="button">Portable!</button>  
-          </div>
-
-          <div id="windows">
-            <button type="button">WINDOWS</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="box1">
-      <div id="python" style="display:none">
+    <div class="box2">
+      <div id="python">
         <h3><em>Python!</em> Based on your answers, I'd bet you'll love learning the simple, user frienldy language that is python!</h3>
         <p>Please rate your experience below!</p>
       </div>
 
-      <div id="ruby" style="display:none">
+      <div id="ruby">
         <h3><em>Ruby</em> is for you! Check out <a href="www.epicodus.com">Epicodus</a> if you want an incredibly welcoming learning enviornment!</h3>
         <p>Please rate your experience below!</p>
       </div>
 
-      <div id="java" style="display:none">
+      <div id="java">
         <h3>My guess is that your analytical mind would thrive in a <em>Java</em> course!</h3>
         <p>Please rate your experience below!</p>
       </div>
 
-      <div id="c" style="display:none">
+      <div id="c">
         <h3>Anyone who likes working with Windows is sure to make it big in a <em>C#</em> world! <a href="www.epicodus.com">Epicodus</a> has an awesome course available for C#!</h3>
         <p>Please rate your experience below!</p>
       </div>
     </div> 
   </div>
 
-      <form id="rate">
-          <label for="questionOne"> Between 1-10, how helpful was this short questionaire?</label>
-          <input id="questionOne" type="text">
-          <button  type="submit">Rate!</button>
-          
-          <div id="thanks">
-            <h2>Thanks for the feedback, I'm so happy you took the time to check out my first webpage made with JavaScript!</h2>
-          </div>
+  <form id="rate">
+      <label for="questionOne"> Between 1-10, how helpful was this short questionaire?</label>
+      <input id="questionOne" type="text">
+      <button  type="submit">Rate!</button>
+      
+      <div id="thanks">
+        <h2>Thanks for the feedback, I'm so happy you took the time to check out my first webpage made with JavaScript!</h2>
+      </div>
 
-          <div id="boo">
-            <h2>Well, next time you need assistance - don't expect my help.</h2>
-          </div>
-      </form>
+      <div id="boo">
+        <h2>Well, next time you need assistance - don't expect my help.</h2>
+      </div>
+  </form>
 
   </body>
 </html>

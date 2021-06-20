@@ -1,7 +1,7 @@
-.box1 {
+.box1 { 
   text-align: center;
     position:static;
-    border: 5px solid rgb(68, 91, 97);
+    border: 5px solid rgb(87, 159, 177);
     padding: 40px;
     margin: 30px;
     width: 1270px;
@@ -17,9 +17,10 @@ body {
 }
 
 .box2 {
+  display: none; 
   text-align: center;
     position:static;
-    border: 4px double rgb(88, 68, 97);
+    border: 5px solid rgb(89, 57, 104);
     padding: 40px;
     margin: 30px;
     width: 1270px;
@@ -36,4 +37,20 @@ body {
 
 #boo {
   display:none;
+}
+
+.python {
+  display: none;
+}
+
+.ruby {
+  display: none;
+}
+
+.c {
+  display: none;
+} 
+
+.java {
+  display: none;
 }
